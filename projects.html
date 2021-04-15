@@ -53,8 +53,15 @@ hr {
     <hr>
     <p id="demo" style="font-size:30px"></p>
   </div>
+
   <div class="bottomleft">
-    <p>Go Back</p>
+    <button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
   </div>
 </div>
 
@@ -81,7 +88,7 @@ var countdownfunction = setInterval(function() {
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
-  // If the count down is over, write some text 
+  // If the count down is over, write text 
   if (distance < 0) {
     clearInterval(countdownfunction);
     document.getElementById("demo").innerHTML = "EXPIRED";
