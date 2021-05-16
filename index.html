@@ -3,210 +3,191 @@
 
 <head>
   <meta charset='UTF-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- =====BOX ICONS===== -->
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   <title>Portfolio Homepage</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!--===== HEADER =====-->
-  <header class="l-header">
-      <nav class="nav bd-grid">
-          <div>
-              <a href="#" class="nav__logo">Almira</a>
-          </div>
-
-          <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                  <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                  <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                  <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                  <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                  <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-              </ul>
-          </div>
-
-          <div class="nav__toggle" id="nav-toggle">
-              <i class='bx bx-menu'></i>
-          </div>
-      </nav>
-  </header>
-
-
-
-  <main class="l-main">
-    <!--===== HOME =====-->
-    <section class="home bd-grid" id="home">
-        <div class="home__data">
-            <h1 class="home__title">Hi,<br>I'm <span class="home__title-color"></span>Almira Hayes<br> Frontend Developer</h1>
-            <h3>High level experience in web design and development, producing top quality work.</h3>
-            <a href="#contact" class="button">Contact</a>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
         </div>
 
-        <div class="home__social">
-            <a href="https://www.linkedin.com/in/almira-hayes-609ba71a5/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://www.behance.net/almirahayes" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-            <a href="https://github.com/Maza0w1" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
         </div>
+      </div>
 
-        <div class="home__img">    
-            <img src="" alt="">
-        </div>
-    </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-          <h2 class="section-title">About</h2>
-
-          <div class="about__container bd-grid">
-              <div class="about__img">
-                  <img src="" alt="">
-              </div>
-              
-              <div>
-                  <h2 class="about__subtitle">I'm Almira</h2>
-                  <p class="about__text">Web developer, with extensive knowledge and years of experience working in web technologies and UI/Ux design, delivering quality work.</p>           
-              </div>                                   
-          </div>
-      </section>
-
-
-       <!--===== SKILLS =====-->
-       <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">          
-            <div>
-                <h2 class="skills__subtitle">Profesional Skills</h2>
-                <p class="skills__text">My technical level</p>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-html5 skills__icon'></i>
-                        <span class="skills__name">HTML5</span>
-                    </div>
-                    <div class="skills__bar skills__html">
-
-                    </div>
-                    <div>
-                        <span class="skills__percentage">95%</span>
-                    </div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-css3 skills__icon'></i>
-                        <span class="skills__name">CSS3</span>
-                    </div>
-                    <div class="skills__bar skills__css">
-                        
-                    </div>
-                    <div>
-                        <span class="skills__percentage">85%</span>
-                    </div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-javascript skills__icon' ></i>
-                        <span class="skills__name">JAVASCRIPT</span>
-                    </div>
-                    <div class="skills__bar skills__js">
-                        
-                    </div>
-                    <div>
-                        <span class="skills__percentage">65%</span>
-                    </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__names">
-                      <i class='bx bxs-python skills__icon'></i>
-                      <span class="skills__name">PYTHON</span>
-                  </div>
-                  <div class="skills__bar skills__py">
-                      
-                  </div>
-                  <div>
-                      <span class="skills__percentage">70%</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxs-paint skills__icon'></i>
-                        <span class="skills__name">UX/UI</span>
-                    </div>
-                    <div class="skills__bar skills__ux">
-                        
-                    </div>
-                    <div>
-                        <span class="skills__percentage">85%</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div>              
-                <img src="" alt="" class="skills__img">
-            </div>
-        </div>
-    </section>
-      <!--===== WORK =====-->
-      <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
-
-        <div class="work__container bd-grid">
-            <div class="work__img">
-                <img src="https://github.com/bedimcode/portfolio-responsive-complete/blob/master/assets/img/work1.jpg?raw=true" alt="">
-            </div>
-            <div class="work__img">
-                <img src="https://github.com/bedimcode/portfolio-responsive-complete/blob/master/assets/img/work2.jpg?raw=true" alt="">
-            </div>
-            <div class="work__img">
-                <img src="" alt="">
-            </div>
-            <div class="work__img">
-                <img src="https://github.com/bedimcode/portfolio-responsive-complete/blob/master/assets/img/work4.jpg?raw=true" alt="">
-            </div>
-            <div class="work__img">
-                <img src="" alt="">
-            </div>
-            <div class="work__img">
-                <img src="https://github.com/bedimcode/portfolio-responsive-complete/blob/master/assets/img/work6.jpg?raw=true" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!--===== CONTACT =====-->
-    <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-
-        <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <input type="button" value="Send" class="contact__button button">
-            </form>
-        </div>
-    </section>
-</main>
-
-<!--===== FOOTER =====-->
-<footer class="footer">
-    <p class="footer__title">Almira</p>
-    <div class="footer__social">
-        <a href="https://www.facebook.com/almira.hayes.1" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-        <a href="https://www.instagram.com/theartofcoding2/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-        <a href="https://twitter.com/theartofcoding2?fbclid=IwAR3X2RVMe_AHHah_logvyV3fzYeT9OU0J1sZm5W8Scc-DEO-GMQ80H36r78" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+      <div class="nav-link-wrapper">
+        <a href="projects.html">Projects</a>
+      </div>
     </div>
-    <p>&#169; 2021 copyright all right reserved</p>
-</footer>
 
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
 
-<!--===== SCROLL REVEAL =====-->
-<script src="https://unpkg.com/scrollreveal"></script>
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1224500457?b=1&k=6&m=1224500457&s=170667a&w=0&h=vqI3oI36-whsMrK1Ynw_yR9Ndy_C4zA5qYSI0vmxbus=)"></div>
 
-<!--===== MAIN JS =====-->
-<script src="main.js"></script>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2014/12/30/13/44/programming-583923__340.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://theartofcodingorg.files.wordpress.com/2020/11/screenshot-2020-11-14-at-3.08.36-pm.png?w=147&h=150)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://assets.hongkiat.com/uploads/programming-jokes/joke-coffee-code.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2019/10/03/12/12/programmer-4523101__340.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2018/09/03/22/05/programming-3652497__340.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2017/05/19/06/22/desktop-2325627_960_720.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2018/06/07/12/26/programming-3460032__340.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2017/02/05/00/19/web-design-2038872__340.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2015/06/24/15/45/computer-820281__340.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831__340.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236__340.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">BlahBlahBlahBlahBlah</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content-right">
+        <a href="https://github.com/maza0w1"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-512.png" class="icon-style" alt="Github icon"></a>
+        <a href="https://instagram.com/theartofcoding2"><img src="https://icon-library.com/images/instagram-circle-icon-png/instagram-circle-icon-png-14.jpg" class="icon-style" alt="Instagram icon"></a>
+        <a href="https://www.twitter.com/theartofcoding2"><img src="https://cpng.pikpng.com/pngl/s/60-606475_png-file-twitter-icon-round-black-clipart.png" class="icon-style" alt="Twitter icon"></a>
+        <a href="https://theartofcoding.org/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUo_QLRnSM93OYt00De5cStRNnIlU740MnuA&usqp=CAU" class="icon-style" alt="Wordpress icon"></a>
+      </div>
+</div>
 </body>
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
 </html>
