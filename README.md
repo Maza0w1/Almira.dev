@@ -1,3 +1,3 @@
 ### Almira.dev
 
-visit my website at: https://almira.dev/
+Visit my website at: https://almira.dev/
