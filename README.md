@@ -1,4 +1,3 @@
 ### Almira.dev
 
-visit my website:
-url("https://almira.dev/")
+visit my website at: https://almira.dev/
