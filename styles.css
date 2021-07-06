@@ -45,7 +45,7 @@
 --font-semi-bold: 600;
 
 /*===== Margenes =====*/
-:root{
+
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
@@ -53,10 +53,9 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
-}
 
 /*===== z index =====*/
-:root{
+
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal 100:
@@ -65,18 +64,21 @@
 /*===== BASE =====*/
 *,::before,::after{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 html{
   scroll-behavior: smooth;
 }
 body{
-  margin: var(--header-height) 0 0 0;
+  margin: var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
-h1,h2,p{
-  margin: 0;
+h1,h2,h3,h4,p{
+  color:var(--font-semi-bold);
 }
 ul{
   margin: 0;
@@ -92,14 +94,29 @@ img{
   display: block;
 }
 /*===== CLASS CSS ===== */
+.section{
+  padding: 2rem 0rem;
+
+}
 .section-title{
   position: relative;
-  font-size: var(--h2-font-size);
+  font-size: var(--h1-font-size);
   color: var(--first-color);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
 }
+.section_subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3)
+ 
+}
+.section__title,
+.section__subtitle{
+  text-align: center;
+}
+
 .section-title::after{
   position: absolute;
   content: "";
