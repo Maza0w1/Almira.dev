@@ -7,10 +7,19 @@
 }
 
 /*===== Colors =====*/
-:root{
-  --first-color: #4070F4;
-  --second-color: #0E2431;
-}
+--hue-color: 250;
+
+/* HSL color mode*/
+--first-color: hsl(var(--hue-color), 69%,61%);
+--first-color-second: hsl(var(--hue-color), 69%, 61%);
+--first-color-alt: hsl(var(--hue-color), 57%, 53%);
+--first-color-lighter: hsl(var(--hue-color), 92%,85%);
+--title-color: hsl(var(--hue-color),8%,15%);
+--text-color: hsl(var(--hue-color), 8%, 45%);
+--text-color-light: hsl(var(--hue-color),8%, 65%);
+--input-color: hsl(var(--hue-color), 70%, 96%);
+--body-color: hsl(var(--hue-color), 60%, 99%);
+--container-color: #FFF;
 
 /*===== Fonts and typography =====*/
 :root{
@@ -21,9 +30,11 @@
 }
 @media screen and (min-width: 768px){
   :root{
-    --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .75rem;
   }
 }
 
