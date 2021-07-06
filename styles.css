@@ -192,6 +192,12 @@ img{
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
 }
+.home__subtitle{
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
 .home__title-color{
   color: var(--first-color);
 }
