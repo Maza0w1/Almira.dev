@@ -264,6 +264,9 @@ img{
  font-size: rem;
  color: var(--mb-0-75);
 }
+.skills__icons{
+  margin-right: var(--mb-0-75)
+}
 .skills__container{
   row-gap: 2rem;
   text-align: center;
