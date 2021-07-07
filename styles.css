@@ -308,6 +308,11 @@ img{
 .skills__bar{
   background-color: var(--first-color-lighter);
 }
+.skills__percentage{
+  display: block;
+  background-color: var(--first-color);
+
+}
 .skills__html{
   width: 95%;
 }
