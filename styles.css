@@ -261,8 +261,8 @@ img{
 }
 .skills__icons,
 .skills__arrow{
- font-size: rem;
- color: var(--mb-0-75);
+ font-size: 2rem;
+ color: var(--first-color);
 }
 .skills__icons{
   margin-right: var(--mb-0-75);
