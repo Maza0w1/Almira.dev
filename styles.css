@@ -345,7 +345,11 @@ img{
 .skills__img{
   border-radius: .5rem;
 }
-
+.skills__close .skills__list{
+  height: 0;
+  overflow: hidden;
+  
+}
 /* ===== WORK =====*/
 .work__container{
   row-gap: 2rem;
