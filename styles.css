@@ -309,18 +309,13 @@ img{
 }
 .skills__name{
   font-size: var(--normal-font-size);
-  font-weight: ar(--font-medium); 
+  font-weight: var(--font-medium); 
 
 }
 .skills__bar,
 .skills__percentage{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
   height: 5px;
   border-radius: .25rem;
-  z-index: var(--z-back);
 }
 .skills__bar{
   background-color: var(--first-color-lighter);
