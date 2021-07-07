@@ -55,3 +55,21 @@ sr.reveal('.work__img',{interval: 200});
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
+
+const skillsContent = document.getElementsByClassName('skills__content'),
+      skillsHeader=document.querySelectorAll('.skills__header')
+
+function toggleSkills(){
+    let itemClass = this.parentNode.getElementsByClassName
+    
+    for(i= 0; i < skillsContent.length; i++){
+        skillsContent[i].className= 'skills__content skills__close'
+    }
+    if(itemClass === 'skills__content skills__close'){
+    }
+}
+
+skillsHeader.forEach((el)=>{
+    el.addEventListner('click', toggleSkills)
+
+})
