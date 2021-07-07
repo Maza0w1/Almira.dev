@@ -259,6 +259,11 @@ img{
   margin-bottom: var(--mb-2-5);
   cursor: pointer;
 }
+.skills__icons,
+.skills__arrow{
+ font-size: rem;
+ color: var(--mb-0-75);
+}
 .skills__container{
   row-gap: 2rem;
   text-align: center;
