@@ -272,7 +272,17 @@ img{
   text-align: center;
 }
 .skills__subtitle{
-  margin-bottom: var(--mb-2);
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.skills__arrow{
+  margin-lefrt: auto;
+  transition: .4s;
+}
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
 }
 .skills__text{
   margin-bottom: var(--mb-4);
