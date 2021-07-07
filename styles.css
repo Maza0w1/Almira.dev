@@ -276,7 +276,7 @@ img{
   color: var(--text-color-light);
 }
 .skills__arrow{
-  margin-lefrt: auto;
+  margin-left: auto;
   transition: .4s;
 }
 .skills__titles{
@@ -329,8 +329,20 @@ img{
 .skills__js{
   width: 65%;
 }
-.skills__ux{
+.skills__react{
   width: 85%;
+}
+.skills__php{
+  width: 80%;
+}
+.skills__nodejs{
+  width: 70%;
+}
+.skills__py{
+  width: 75%;
+}
+.skills__figma{
+  width: 90%;
 }
 .skills__img{
   border-radius: .5rem;
