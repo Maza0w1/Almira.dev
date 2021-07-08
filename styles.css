@@ -270,7 +270,9 @@ img{
 }
 .skills__title{
   font-size: var(--h3-font-size);
-
+}
+.skills__text{
+  margin-bottom: var(--mb-4);
 }
 .skills__subtitle{
   font-size: var(--small-font-size);
@@ -307,7 +309,7 @@ img{
   background-color: var(--first-color);
 }
 .skills__html{
-  width: 95%;
+  width: 90%;
 }
 .skills__css{
   width: 80%;
