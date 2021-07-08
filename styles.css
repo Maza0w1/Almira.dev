@@ -294,7 +294,7 @@ img{
 }
 .skills__icon{
   font-size: 2rem;
-  margin-right: var(--mb-2);
+  margin-right: var(--mb-0-75);
   color: var(--first-color);
 }
 .skills__names{
@@ -322,22 +322,19 @@ img{
   width: 95%;
 }
 .skills__css{
-  width: 85%;
+  width: 80%;
 }
 .skills__js{
   width: 65%;
 }
-.skills__react{
-  width: 85%;
-}
 .skills__php{
-  width: 80%;
+  width: 55%;
 }
 .skills__nodejs{
   width: 70%;
 }
 .skills__py{
-  width: 75%;
+  width: 85%;
 }
 .skills__figma{
   width: 90%;
