@@ -305,7 +305,6 @@ img{
 .skills__percentage{
   display: block;
   background-color: var(--first-color);
-
 }
 .skills__html{
   width: 95%;
@@ -339,11 +338,8 @@ img{
   height: max-content;
   margin-bottom: var(--mb-2-5);
 }
-
 .skills__open .skills__arrow{
   transform: rotate(-180deg);
-  
-
 }
 /* ===== WORK =====*/
 .work__container{
