@@ -276,7 +276,7 @@ img{
   margin-right: var(--mb-0-75);
   color: var(--first-color);
 }
-.skills__title{
+.skills__titles{
   font-size: var(--h3-font-size);
 }
 .skills__text{
