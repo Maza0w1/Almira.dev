@@ -258,7 +258,7 @@ img{
 
 /* ===== SKILLS =====*/
 .skills_container{
-  row gap: 0;
+  row gap: 2;
 }
 
 .skills_header{
@@ -293,7 +293,6 @@ img{
 .skills__list{
   row-gap: 1.5rem;
   padding-left: 2.7rem;
-
 }
 .skills__titles{
   display: flex;
