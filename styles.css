@@ -282,7 +282,7 @@ img{
 .skills__text{
   margin-bottom: var(--mb-4);
 }
-.skills__subtitle{
+.skills__subtitles{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
