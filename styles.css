@@ -229,7 +229,7 @@ img{
   border-radius: .5rem;
 }
 .button:hover{
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-lighter);
 }
 .button__icon{
   font-size: 1.25rem;
