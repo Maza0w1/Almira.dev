@@ -258,7 +258,7 @@ img{
 
 /* ===== SKILLS =====*/
 .skills_container{
-  row gap: 2;
+  row gap: 0;
 }
 
 .skills_header{
@@ -287,7 +287,7 @@ img{
   color: var(--text-color-light);
 }
 .skills__arrow{
-  margin-left: auto;
+  margin-right: auto;
   transition: .4s;
 }
 .skills__list{
