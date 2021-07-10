@@ -282,6 +282,7 @@ img{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
+
 /* ===== WORK =====*/
 .work__container{
   row-gap: 2rem;
