@@ -99,7 +99,7 @@ img{
 }
 
 /*===== CLASS CSS ===== */
-.section-title{
+.section__title{
   position: relative;
   font-size: var(--h2-font-size);
   color: var(--first-color);
@@ -107,7 +107,7 @@ img{
   margin-bottom: var(--mb-4);
   text-align: center;
 }
-.section-title::after{
+.section__title::after{
   position: absolute;
   content: "";
   width: 64px;
@@ -122,7 +122,19 @@ img{
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
+/*===== LAYOUT =====*/
+.section{
+  padding: 2rem 0 4rem;
+}
 
+.section__title{
+  font-size: var(--h1-font-size);
+}
+.section__subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
 /*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
