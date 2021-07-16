@@ -1,4 +1,4 @@
-/*===== MENU SHOW =====*/ 
+/*==================== MENU SHOW Y HIDDEN ====================*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -11,29 +11,58 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/*===== ACTIVE AND REMOVE MENU =====*/
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
 const navLink = document.querySelectorAll('.nav__link');   
 
 function linkAction(){
   /*Active link*/
   navLink.forEach(n => n.classList.remove('active'));
   this.classList.add('active');
-  
-  /*Remove menu mobile*/
-  const navMenu = document.getElementById('nav-menu')
+
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+
+
+/*==================== REMOVE MENU MOBILE ====================*/
+const navMenu = document.getElementById('nav-menu')
   navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+/*==================== ACCORDION SKILLS ====================*/
 
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-});
 
-/*SCROLL HOME*/
+/*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+        
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qualification_active')
+        })
+        target.classList.add('qualification__active')
+        
+        tabs.forEach(tab =>{
+            tab.classList.remove('qualification__active')
+        })
+            
+        tab.classList.add('qualification__active')
+    })
+})
+
+/*==================== SERVICES MODAL ====================*/
+
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 sr.reveal('.home__title',{}); 
 sr.reveal('.button',{delay: 200}); 
 sr.reveal('.home__img',{delay: 400}); 
@@ -75,23 +104,10 @@ skillsHeader.forEach((el)=>{
 
 })
 
-/*===== Qualification Tabs =====*/
-const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
+/*==================== CHANGE BACKGROUND HEADER ====================*/ 
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
-        
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove('qualification_active')
-        })
-        target.classList.add('qualification__active')
-        
-        tabs.forEach(tab =>{
-            tab.classList.remove('qualification__active')
-        })
-            
-        tab.classList.add('qualification__active')
-    })
-})
+
+/*==================== SHOW SCROLL UP ====================*/ 
+
+
+/*==================== DARK LIGHT THEME ====================*/ 
