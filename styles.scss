@@ -51,7 +51,7 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior: smooth;
+    scroll__behavior: smooth;
 }
 body{
     margin: var(--header-height) 0 0 0;
@@ -68,7 +68,7 @@ ul{
     list-style: none;
 }
 a{
-    text-decoration: none;
+    text__decoration: none;
 }
 img{
     max-width: 100%;
@@ -77,7 +77,7 @@ img{
 }
 
 /*===== CLASS CSS ===== */
-.section-title{
+.section__title{
     position: relative;
     font-size: var(--h2-font-size);
     color: var(--first-color);
@@ -394,6 +394,7 @@ img{
 .skills__figma{
   width: 90%;
 }
+
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
   display: flex;
