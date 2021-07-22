@@ -75,7 +75,7 @@ img{
   display: block;
 }
 /*===== CLASS CSS ===== */
-.section-title{
+.section__title{
   position: relative;
   font-size: var(--h2-font-size);
   color: var(--first-color);
@@ -83,7 +83,7 @@ img{
   margin-bottom: var(--mb-4);
   text-align: center;
 }
-.section-title::after{
+.section__title::after{
   position: absolute;
   content: "";
   width: 64px;
@@ -291,14 +291,17 @@ img{
 .skills__js{
   width: 65%;
 }
+.skills__php{
+  width: 50%
+}
+.skills__nodejs{
+  width: 55%
+}
 .skills__py{
     width: 70%;
 }
-.skills__sql{
-  width: 50%;
-}
-.skills__ux{
-  width: 85%;
+.skills__figma{
+  width: 90%;
 }
 .skills__img{
   border-radius: .5rem;
@@ -368,10 +371,10 @@ img{
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
-  .section-title{
+  .section__title{
     margin-bottom: var(--mb-6);
   }
-  .section-title::after{
+  .section__title::after{
     width: 80px;
     top: 3rem;
   }
