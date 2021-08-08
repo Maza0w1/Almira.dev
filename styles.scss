@@ -10,7 +10,8 @@ body{
     height: 100vh;
     padding:0;
     margin:0;
-}
+    }
+
 /*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
@@ -61,7 +62,7 @@ body{
     box-sizing: border-box;
 }
 html{
-    scroll__behavior: smooth;
+    scroll-behavior: smooth;
 }
 body{
     margin: var(--header-height) 0 0 0;
@@ -78,7 +79,7 @@ ul{
     list-style: none;
 }
 a{
-    text__decoration: none;
+    text-decoration: none;
 }
 img{
     max-width: 100%;
@@ -87,7 +88,7 @@ img{
 }
 
 /*===== CLASS CSS ===== */
-.section__title{
+.section-title{
     position: relative;
     font-size: var(--h2-font-size);
     color: var(--first-color);
@@ -327,145 +328,6 @@ img{
     &__img{
         border-radius: .5rem;
     }
-}
-/*==================== SKILLS ====================*/
-.skills__container{
-  row-gap: 0;
-}
-
-.skills__header{
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
-}
-.skills__icon,
-.skills__arrow{
- font-size: 2rem;
- color: var(--first-color);
-}
-.skills__icon{
-  margin-right: var(--mb-0-75);
-}
-.skills__title{
-  font-size: var(--h3-font-size);
-}
-.skills__subtitle{
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-.skills__arrow{
-  margin-right: auto;
-  transition: .4s;
-}
-.skills__list{
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-.skills__titles{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-.skills__name{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium); 
-}
-.skills__bar,
-.skills__percentage{
-  height: 5px;
-  border-radius: .25rem;
-}
-.skills__bar{
-  background-color: var(--first-color-lighter);
-} 
-.skills__percentage{
-  display: block;
-  background-color: var(--first-color);
-}
-.skills__html{
-  width: 95%;
-}
-.skills__css{
-  width: 80%;
-}
-.skills__js{
-  width: 65%;
-}
-.skills__php{
-  width: 55%;
-}
-.skills__nodejs{
-  width: 70%;
-}
-.skills__py{
-  width: 85%;
-}
-.skills__figma{
-  width: 90%;
-}
-
-/*==================== QUALIFICATION ====================*/
-.qualification__tabs{
-  display: flex;
-  justifiy-content: space-evenly;
-  margin-bottom: var(--mb-2);
-}
-
-.qualification__button{
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-meidum);
-  cursor: pointer;
-}
-.qualification__button:hover{
-  color: var(--first-color);
-}
-.qualification__icon{
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
-}
-.qualification__data{
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  column-gap: 1rem;
-}
-
-.qualification__title{
-  font-size: var(--normal-font-size);
-}
-.qualification__subtitle{
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-}
-
-.qualification__calendar{
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-}
-.qualification__rounder{
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  background-color: var(--first-color);
-  border-radius: 50%;
-}
-.qualification__line{
-  display: block;
-  width: 1px;
-  height: 100%;
-  background-color: var(--first-color);
-  transform: translate(6px, -7px);
-}
-.qualification [data-content]{
-  display: none;
-}
-
-.qualification__active[data-content]{
-  display: block;
-}
-.qualification__button.qualification__active{
-  color: var(--first-color);
 }
 /* ===== WORK =====*/
 .work{
