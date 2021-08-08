@@ -1,13 +1,23 @@
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+body{
+    background-image: url('https://thumbs.gfycat.com/CookedBeautifulDungbeetle-mobile.mp4');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
 /*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
     --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Colors =====*/
 :root{
     --first-color: #4070F4;
     --second-color: #0E2431;
