@@ -1,4 +1,4 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+/*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -11,26 +11,29 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
+/*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');   
 
 function linkAction(){
   /*Active link*/
   navLink.forEach(n => n.classList.remove('active'));
   this.classList.add('active');
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-
-
-/*==================== REMOVE MENU MOBILE ====================*/
-const navMenu = document.getElementById('nav-menu')
+  
+  /*Remove menu mobile*/
+  const navMenu = document.getElementById('nav-menu')
   navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+
+/*SCROLL HOME*/
 sr.reveal('.home__title',{}); 
 sr.reveal('.button',{delay: 200}); 
 sr.reveal('.home__img',{delay: 400}); 
@@ -52,25 +55,6 @@ sr.reveal('.work__img',{interval: 200});
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
-
-const skillsContent = document.getElementsByClassName('skills__content'),
-      skillsHeader=document.querySelectorAll('.skills__header')
-
-function toggleSkills(){
-    let itemClass = this.parentNode.getElementsByClassName
-    
-    for(i= 0; i < skillsContent.length; i++){
-        skillsContent[i].className= 'skills__content skills__close'
-    }
-    if(itemClass === 'skills__content skills__close'){
-        this.parentNode.className = 'skills__content'
-    }
-}
-
-skillsHeader.forEach((el)=>{
-    el.addEventListner('click', toggleSkills)
-
-})
 
 /*====================  BACKGROUND Animation  ====================*/ 
 import React from 'react';
@@ -438,7 +422,5 @@ const BackgroundAnimation = () => (
 );
 
 export default BackgroundAnimation;
-/*==================== SHOW SCROLL UP ====================*/ 
-
 
 /*==================== DARK LIGHT THEME ====================*/ 
