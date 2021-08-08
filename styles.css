@@ -1,4 +1,4 @@
-*===== GOOGLE FONTS =====*/
+/*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root{
@@ -74,8 +74,9 @@ img{
   height: auto;
   display: block;
 }
+
 /*===== CLASS CSS ===== */
-.section__title{
+.section-title{
   position: relative;
   font-size: var(--h2-font-size);
   color: var(--first-color);
@@ -83,7 +84,7 @@ img{
   margin-bottom: var(--mb-4);
   text-align: center;
 }
-.section__title::after{
+.section-title::after{
   position: absolute;
   content: "";
   width: 64px;
@@ -98,6 +99,7 @@ img{
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
+
 /*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
@@ -117,6 +119,7 @@ img{
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
+
 /*===== NAV =====*/
 .nav{
   height: var(--header-height);
@@ -175,6 +178,7 @@ img{
   top: 2rem;
   background-color: var(--first-color);
 }
+
 /*=== Show menu ===*/
 .show{
   right: 0;
@@ -214,6 +218,7 @@ img{
   bottom: 0;
   width: 295px;
 }
+
 /*BUTTONS*/
 .button{
   display: inline-block;
@@ -242,6 +247,7 @@ img{
   width: 200px;
   border-radius: .5rem;
 }
+
 /* ===== SKILLS =====*/
 .skills__container{
   row-gap: 2rem;
@@ -291,21 +297,13 @@ img{
 .skills__js{
   width: 65%;
 }
-.skills__php{
-  width: 50%
-}
-.skills__nodejs{
-  width: 55%
-}
-.skills__py{
-    width: 70%;
-}
-.skills__figma{
-  width: 90%;
+.skills__ux{
+  width: 85%;
 }
 .skills__img{
   border-radius: .5rem;
 }
+
 /* ===== WORK =====*/
 .work__container{
   row-gap: 2rem;
@@ -342,6 +340,7 @@ img{
   cursor: pointer;
   margin-left: auto;
 }
+
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--second-color);
@@ -362,6 +361,7 @@ img{
   color: #fff;
   margin: 0 var(--mb-2)
 }
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
   body{
@@ -371,10 +371,10 @@ img{
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
-  .section__title{
+  .section-title{
     margin-bottom: var(--mb-6);
   }
-  .section__title::after{
+  .section-title::after{
     width: 80px;
     top: 3rem;
   }
@@ -427,7 +427,7 @@ img{
     width: 300px;
   }
   .work__container{
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
   }
@@ -447,4 +447,3 @@ img{
   .home__img{
     right: 10%;
   }
-}
