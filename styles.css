@@ -1,10 +1,16 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-body{
-background-image:url('https://gfycat.com/ifr/CookedBeautifulDungbeetle');
-background-position: center;
-background-size: cover;
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.gif-container {
+  background: url(https://gfycat.com/ifr/CookedBeautifulDungbeetle') center;
+  background-size: cover;
+
+  height: 100%;
 }
 
 /*===== VARIABLES CSS =====*/
