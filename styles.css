@@ -11,7 +11,7 @@ html, body {
   background-size: cover;
 
   height: 100%;
-
+}
 
 /*===== VARIABLES CSS =====*/
 :root{
@@ -460,4 +460,4 @@ img{
   .home__img{
     right: 10%;
   }
-}
+
