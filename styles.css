@@ -160,6 +160,20 @@ img{
 .nav__link:hover{
   position: relative;
 }
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__icon{
+  font-size: 1.2 rem;
+}
+
 .nav__link:hover::after{
   position: absolute;
   content: "";
@@ -177,6 +191,16 @@ img{
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+.nav__logo,
+.nav__toggle{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+.nav__logo:hover{
+  color: var(--first-color);
+}
+
 
 /*Active menu*/
 .active::after{
