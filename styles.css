@@ -1,13 +1,11 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-/*
 html { 
   background:  url(https://media4.giphy.com/media/l3q2XB76CaWPggiNW/giphy.gif) no-repeat center center fixed; 
   background-size: cover;
   height: 100%;
 }
-*/
 
 
 /*===== VARIABLES CSS =====*/
@@ -123,7 +121,6 @@ img{
 .l-header{
   width: 100%;
   position: fixed;
-  bottom: 0;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -133,15 +130,12 @@ img{
 
 /*===== NAV =====*/
 .nav{
-  max-width: 968px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
 }
-
-/*
 @media screen and (max-width: 768px){
   .nav__menu{
     position: fixed;
@@ -154,8 +148,6 @@ img{
     transition: .5s;
   }
 }
-*/
-
 .nav__item{
   margin-bottom: var(--mb-4);
 }
@@ -166,20 +158,6 @@ img{
 .nav__link:hover{
   position: relative;
 }
-
-.nav__list{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: var(--small-font-size);
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-}
-
-.nav__icon{
-  font-size: 1.2 rem;
-}
-
 .nav__link:hover::after{
   position: absolute;
   content: "";
@@ -196,27 +174,6 @@ img{
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
-}
-
-.nav__logo,
-.nav__toggle{
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-}
-.nav__logo:hover{
-  color: var(--first-color);
-}
-
-@media screen and (max-width: 768px){
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--second-color);
-  padding: 2rem 1.5rem 4rem;
-  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
-  border-radius: 1.5rem 1.5rem 0 0;
-  transition: .3s;
 }
 
 /*Active menu*/
@@ -498,4 +455,3 @@ img{
   .home__img{
     right: 10%;
   }
-
