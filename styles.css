@@ -269,7 +269,6 @@ img{
 .skills__container{
   row-gap: 2rem;
   text-align: center;
-  justify-items: center;
 }
 .skills__text{
   margin-bottom: var(--mb-4);
