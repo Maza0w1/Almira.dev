@@ -319,26 +319,76 @@ img{
     }
 }
 /* ===== WORK =====*/
-.work{
-    &__container{
-        row-gap: 2rem;
-    }
-    &__img{
-        box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
-        border-radius: .5rem;
-        overflow: hidden;
-        
-        & img{
-            transition: 1s;
-            cursor: pointer;
-
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
-    }
+/* ===== WORK =====*/
+  /*====Services Section======*/
+  .services {
+  padding-bottom: 30px;
 }
 
+.services .des-box {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 30px 0 35px 0 rgba(32, 1, 73, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+}
+
+.services .des-box::before {
+  content: '';
+  position: absolute;
+  background: #fdeff2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.services .des-box:hover::before {
+  background: #000000;
+  top: 0;
+  border-radius: 0px;
+}
+
+.services .icon {
+  margin-bottom: 15px;
+}
+
+.services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #32CD32;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .des-box:hover .title a, .services .des-box:hover .description {
+  color: #fff;
+}
+
+.services .des-box:hover .icon i {
+  color: #fff;
+}
 /* ===== CONTACT =====*/
 .contact{
     &__input{
